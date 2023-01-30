@@ -43,7 +43,8 @@ class Producto{
         return this.#dcto;
     }
     get getPrime(){
-        if (this.#prime == "true"){
+        // if (this.#prime == "true"){
+        if (this.#prime == "S"){
             return "PRIME";
             }else{
                 return "Regular";
@@ -63,11 +64,11 @@ class Producto{
         this.#dcto=dcto;
     }
     set isPrime(prime){
-        this.#prime=prime; 
+        this.#prime=prime.toUpperCase(); 
     }
 
     getEnvio(){
-        if(this.#prime =="true"){
+        if(this.#prime =="S"){
             return "GRATIS";
         }else{
         return "15€"}
@@ -192,8 +193,8 @@ const AdicionarProducto = () => {
     
     const teclado = new Teclado();
     
-    const id = prompt('Id:');
-    teclado.setId = "t"+id;
+    const id = prompt('Id: (tXXX)',"t");
+    teclado.setId = id;
 
     const marca = prompt('Marca:');
     teclado.setMarca = marca;
@@ -204,7 +205,7 @@ const AdicionarProducto = () => {
     const dcto = prompt('Descuento:');
     teclado.setDcto = dcto;
 
-    const prime = prompt('Prime? ==> (true):');
+    const prime = prompt('Prime? ==> (S/N):');
     teclado.isPrime = prime;
 
     const color = prompt('Color:');
