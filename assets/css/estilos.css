@@ -22,7 +22,7 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: rgb(255, 251, 5);
+    background-color: rgb(255, 255, 240);
     color:rgb(0, 2, 3);
     width: auto;
     padding: 20px;
@@ -49,6 +49,7 @@ body{
   color:rgb(0, 0, 0);
   padding: 20px;
   font-size: 2em;
+  margin-top: 1em;
   width: auto;
 }
 
@@ -64,21 +65,21 @@ body{
 
 #idBotones{
 
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     color:aliceblue;
     /* color es de la letra */
-    width: fit-content;
+    /* width: fit-content; */
     margin: 0px auto;
-    padding: 1em;
-    font-size: 25px;
-    border: grey 1px double;
-    border-radius: 0.5em;
+    /* padding: 1em; */
+    /* font-size: 25px; */
+    /* border: grey 1px double; */
+    /* border-radius: 0.5em; */
     margin-bottom: 2em;
 }
 
 
 .img{
-    width: 5em;
+    width: 3.5em;
 }
 
 .examinar{
@@ -125,10 +126,11 @@ table {
     text-align: center;
     border-collapse: collapse;
     border: 1px solid #d4d4d4;
+    width: 100%;
   }
   
   tr:first-child{
-    background: rgb(225, 228, 53) !important;
+    background: orange !important;
     font-weight: bold
   }
 
@@ -174,7 +176,8 @@ table {
   
     table {
       margin-bottom: 2em;
-      font-size: xx-small;
+      font-size:0.4em;
+      width:100%;
     }
     
     th, td {
@@ -189,17 +192,10 @@ table {
       /* margin: 2em auto; */
       /* padding-bottom: 5%; */
     }
-    #idBotones{
-
-      background-color: rgb(255, 255, 255);
-      color:aliceblue;
-      margin: 0px auto;
-      padding: 0.5em;
-      border: grey 1px double;
-      border-radius: 0.5em;
-      margin-bottom: 2em;
-  }
-
+    #idBotones button{
+      font-size: small;
+    }
+  
   #listaProductos{
     background: white;
     border-radius: 10px;
